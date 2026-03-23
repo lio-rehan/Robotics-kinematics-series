@@ -27,3 +27,17 @@ result_z=rotation_matrix_z(30)
 print(result_x)
 print(result_y)
 print(result_z)
+
+
+def position():
+ x=float(input("x:"))
+ y=float(input("y:"))
+ z=float(input("z:"))
+ return np.array([x,y,z])
+
+p=position()
+print(p)
+
+rotatepx=print(result_x@p)
+rotatepy=print(result_y@p)
+rotatepz=print(result_z@p)
